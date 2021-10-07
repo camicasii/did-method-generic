@@ -1,0 +1,44 @@
+{
+  "name": "did-method-generic",
+  "version": "0.1.0",
+  "description": "A did:genery method driver ",
+  "main": "lib/",
+  "scripts": {
+    "prestart": "npm install"    
+  },
+  "keywords": [
+    "Decentralized",
+    "Identifier",
+    "DID"
+  ],
+  "engines": {
+    "node": ">=14.17.6"
+  },  
+  "homepage": "https://github.com/camicasii/did-method-generic",
+  "author": {
+    "name": "camicasii",
+    "email": "camicasii@hotmail.com",
+    "url": "https://www.linkedin.com/in/jhonattan-ramirez/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/camicasii/did-method-generic"
+  },
+  "bugs": {
+    "url": "https://github.com/camicasii/did-method-generic/issues",
+    "email": "camicasii@hotmail.com"
+  },
+  "license": "BSD-3-Clause",  
+  "private": true,
+  "dependencies": {
+    "connect": "3.2.0",
+    "crypto-ld": "^3.7.0",
+    "did-method-key": "^0.7.0",
+    "express": "^4.17.1",
+    "js-yaml": "3.3.0",
+    "lru-cache": "^6.0.0",
+    "oas3-tools": "2.0.2",
+    "security-context": "^4.0.0",
+    "x25519-key-pair": "^3.0.0"
+  }
+}
