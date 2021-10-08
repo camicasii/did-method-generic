@@ -1,6 +1,6 @@
 {
   "name": "did-method-generic",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "A did:genery method driver ",
   "main": "lib/",
   "scripts": {
@@ -12,7 +12,7 @@
     "DID"
   ],
   "engines": {
-    "node": ">=14.17.6"
+    "node": ">=10.0.0"
   },  
   "homepage": "https://github.com/camicasii/did-method-generic",
   "author": {
@@ -29,7 +29,7 @@
     "email": "camicasii@hotmail.com"
   },
   "license": "BSD-3-Clause",  
-  "private": true,
+  "private": false,
   "dependencies": {
     "connect": "3.2.0",
     "crypto-ld": "^3.7.0",
