@@ -8,7 +8,7 @@
 ## Table of Contents
 
 - [Background](#background)
-  * [Example DID Document](#example-did-document)
+  - [Example DID Document](#example-did-document)
 - [Security](#security)
 - [Install](#install)
 - [Usage](#usage)
@@ -20,10 +20,9 @@
 
 See also (related specs):
 
-* [Decentralized Identifiers (DIDs) - Data Model and Syntaxes](https://w3c-ccg.github.io/did-spec/)
-* [Linked Data Cryptographic Suite Registry](https://w3c-ccg.github.io/ld-cryptosuite-registry/)
-* [Linked Data Proofs](https://w3c-dvcg.github.io/ld-proofs/)
-
+- [Decentralized Identifiers (DIDs) - Data Model and Syntaxes](https://w3c-ccg.github.io/did-spec/)
+- [Linked Data Cryptographic Suite Registry](https://w3c-ccg.github.io/ld-cryptosuite-registry/)
+- [Linked Data Proofs](https://w3c-dvcg.github.io/ld-proofs/)
 
 The `did:key` method is used to express public keys in a way that doesn't
 require a DID Registry of any kind. Its general format is:
@@ -82,7 +81,7 @@ That DID would correspond to the following DID Document:
 
 The `keyAgreement` key is a Curve25519 public key (suitable for
 Diffie-Hellman key exchange) that is deterministically _derived_ from the source
-Ed25519 key, using  [`ed2curve-js`](https://github.com/dchest/ed2curve-js).
+Ed25519 key, using [`ed2curve-js`](https://github.com/dchest/ed2curve-js).
 
 Note that this derived key is optional -- there's currently
 [no proof](https://crypto.stackexchange.com/questions/3260/using-same-keypair-for-diffie-hellman-and-signing/3311#3311)
@@ -139,7 +138,9 @@ didDocument.keys
 To get a DID Document for an existing `did:key` DID:
 
 ```js
-const didDocument = await didKeyDriver.get({did: 'did:key:z6MkpTHR8VNsBxYAAWHut2Geadd9jSwuBV8xRoAnwWsdvktH'});
+const didDocument = await didKeyDriver.get({
+  did: "did:key:z6MkpTHR8VNsBxYAAWHut2Geadd9jSwuBV8xRoAnwWsdvktH",
+});
 ```
 
 (Results in the [example DID Doc](#example-did-document) above).
@@ -148,8 +149,8 @@ If you have an existing [`crypto-ld`](https://github.com/digitalbazaar/crypto-ld
 key pair, you can convert it to a `did:key` method DID Doc:
 
 ```js
-const {Ed25519KeyPair} = require('crypto-ld');
-const {keyToDidDoc} = require('did-method-key').driver();
+const { Ed25519KeyPair } = require("crypto-ld");
+const { keyToDidDoc } = require("did-method-key").driver();
 
 const edKey = await Ed25519KeyPair.generate();
 
@@ -160,18 +161,12 @@ const didDoc = await keyToDidDoc(edKey);
 
 ## Contribute
 
-this libraries is a modified version of [digitalbazaar/did-method-key](https://github.com/digitalbazaar/bedrock/blob/master/CONTRIBUTING.md)!
-
-PRs accepted.
-
-
-Small note: If editing the Readme, please conform to the
-[standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+this libraries is a modified version of [digitalbazaar/did-method-key](https://github.com/digitalbazaar/did-method-key-js)
 
 ## Commercial Support
 
 Commercial support for this library is available upon request from
-camicasii@hotmail.com 
+camicasii@hotmail.com
 
 ## License
 
