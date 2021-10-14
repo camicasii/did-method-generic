@@ -90,7 +90,7 @@ that this is safe to do.
 
 ## Install
 
-Requires Node.js 8.3+
+Requires Node.js 14+
 
 To install from `npm`:
 
@@ -101,8 +101,8 @@ npm install --save did-method-key
 To install locally (for development):
 
 ```
-git clone https://github.com/digitalbazaar/did-method-key.git
-cd did-method-key
+git clone https://github.com/camicasii/did-method-generic.git
+cd did-method-generic
 npm install
 ```
 
@@ -160,9 +160,10 @@ const didDoc = await keyToDidDoc(edKey);
 
 ## Contribute
 
-See [the contribute file](https://github.com/digitalbazaar/bedrock/blob/master/CONTRIBUTING.md)!
+this libraries is a modified version of [digitalbazaar/did-method-key](https://github.com/digitalbazaar/bedrock/blob/master/CONTRIBUTING.md)!
 
 PRs accepted.
+
 
 Small note: If editing the Readme, please conform to the
 [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
